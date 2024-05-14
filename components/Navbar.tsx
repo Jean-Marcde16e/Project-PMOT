@@ -120,12 +120,12 @@ export function Navbar() {
             <SignedIn></SignedIn>
             <DropdownMenuContent align="end">
               <DropdownMenuItem>
-                <Link href="/inloggen" className="flex items-center gap-2">
+                <Link href="/login" className="flex items-center gap-2">
                   {t("signin")}
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Link href="/registreren" className="flex items-center gap-2">
+                <Link href="/sign-up" className="flex items-center gap-2">
                   {t("signup")}
                 </Link>
               </DropdownMenuItem>
