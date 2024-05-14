@@ -135,7 +135,7 @@ export function Navbar() {
         <div className="flex justify-between items-center mx-auto px-4 sm:px-2 py-3 max-w-7xl">
           <div className="flex gap-1 text-white">
             <Menu />
-            <p className="font-roboto">All catagories</p>
+            <p className="font-roboto">{t("categories")}</p>
           </div>
           <div className="flex gap-3 text-white font-roboto">
             <Link
