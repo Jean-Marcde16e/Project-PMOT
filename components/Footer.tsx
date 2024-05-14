@@ -16,7 +16,7 @@ export function Footer() {
           <div className="mx-auto sm:mx-0">
             <Image src="/logo-big.png" alt="Logo" height={100} width={200} />
           </div>
-          <div className="flex flex-col mt-6 sm:mt-0">
+          <div className="flex flex-col mt-12 sm:mt-0">
             <div className="p-1">
               <h1 className="font-bold text-xl text-center sm:text-left">
                 {t("newsletterTitle")}
