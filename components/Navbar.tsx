@@ -29,12 +29,14 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { UserButton } from "@clerk/nextjs";
-
+import { useTranslations } from "next-intl";
+import { SignedIn } from "@clerk/nextjs";
 export function Navbar() {
+  const t = useTranslations("Navbar");
+
   return (
     <header className="top-0 right-0 left-0 z-40 bg-primary drop-shadow-lg shadow-lg">
       <div className="flex justify-between items-center mx-auto px-4 sm:px-2 py-4 max-w-7xl">
-        {/* <header className="top-0 sticky flex items-center gap-4 bg-background px-4 md:px-6 border-b h-16"> */}
         <nav className="md:flex md:flex-row flex-col md:items-center gap-6 md:gap-5 lg:gap-6 hidden font-medium text-lg md:text-sm">
           <Link
             href="#"
@@ -66,25 +68,25 @@ export function Navbar() {
                 href="#"
                 className="text-muted-foreground hover:text-foreground"
               >
-                Home
+                {t("items.home")}
               </Link>
               <Link
                 href="#"
                 className="text-muted-foreground hover:text-foreground"
               >
-                Webshop
+                {t("items.webshop")}
               </Link>
               <Link
                 href="#"
                 className="text-muted-foreground hover:text-foreground"
               >
-                Media
+                {t("items.media")}
               </Link>
               <Link
                 href="#"
                 className="text-muted-foreground hover:text-foreground"
               >
-                Publicaties
+                {t("items.publications")}
               </Link>
               <LanguageSelector />
             </nav>
@@ -96,7 +98,7 @@ export function Navbar() {
               <Search className="top-2.5 left-2.5 absolute w-4 h-4 text-muted-foreground" />
               <Input
                 type="search"
-                placeholder="Product zoeken..."
+                placeholder={t("search")}
                 className="pl-8 sm:w-[300px] md:w-[400px] lg:w-[500px]"
               />
             </div>
@@ -115,15 +117,16 @@ export function Navbar() {
                 <span className="sr-only">Toggle language menu</span>
               </Button>
             </DropdownMenuTrigger>
+            <SignedIn></SignedIn>
             <DropdownMenuContent align="end">
               <DropdownMenuItem>
                 <Link href="/inloggen" className="flex items-center gap-2">
-                  Inloggen
+                  {t("signin")}
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
                 <Link href="/registreren" className="flex items-center gap-2">
-                  Registreren
+                  {t("signup")}
                 </Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
@@ -137,25 +140,25 @@ export function Navbar() {
               href="#"
               className="text-muted-foreground hover:text-foreground"
             >
-              Home
+              {t("items.home")}
             </Link>
             <Link
               href="#"
               className="text-muted-foreground hover:text-foreground"
             >
-              Webshop
+              {t("items.webshop")}
             </Link>
             <Link
               href="#"
               className="text-muted-foreground hover:text-foreground"
             >
-              Media
+              {t("items.media")}
             </Link>
             <Link
               href="#"
               className="text-muted-foreground hover:text-foreground"
             >
-              Publicaties
+              {t("items.publications")}
             </Link>
           </div>
           <div>

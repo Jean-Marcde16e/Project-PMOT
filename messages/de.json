@@ -1,17 +1,36 @@
 {
   "LanguageSelector": {
-    "English": "Engels",
-    "Dutch": "Nederlands",
-    "German": "Duits",
-    "en": "Engels",
-    "nl": "Nederlands",
-    "de": "Duits"
+    "English": "Englisch",
+    "Dutch": "Niederländisch",
+    "German": "Deutsch"
   },
-  "homepage": {
+  "Navbar": {
+    "search": "Suchen...",
+    "items": {
+      "home": "Startseite",
+      "webshop": "Webshop",
+      "media": "Medien",
+      "publications": "Veröffentlichungen"
+    },
+    "signin": "Anmelden",
+    "signup": "Registrieren"
+  },
+  "Homepage": {
     "header": {
-      "title": "De specialist voor uitdagende techniek materialen voor school en particulier",
-      "subtitle": "PMOT is gespecialiseerd in wetenschap en techniek voor de basisschool en het voortgezet onderwijs. Hiervoor is een, speciaal voor het onderwijs uitgeselecteerd assortiment  samengesteld, dat past binnen onderzoekend en ontwerpend leren. Gebaseerd op 30 jaar ervaring binnen dit leergebied.",
-      "cta": "Lees meer"
+      "title": "Der Spezialist für anspruchsvolle technische Materialien für Schule und Privatpersonen",
+      "subtitle": "PMOT ist auf Wissenschaft und Technik für Grund- und Sekundarschulen spezialisiert. Hierfür wurde ein speziell für den Bildungsbereich ausgewähltes Sortiment zusammengestellt, das in forschendes und entwerfendes Lernen passt. Basierend auf 30 Jahren Erfahrung in diesem Lernbereich.",
+      "cta": "Mehr erfahren"
     }
+  },
+  "Footer": {
+    "newsletterTitle": "Für den Newsletter anmelden",
+    "newsletterSubTitle": "Bleiben Sie auf dem neuesten Stand!",
+    "form": {
+      "email": "Email",
+      "subscribe": "Abonnieren"
+    },
+    "data": "Daten",
+    "information": "Information",
+    "company-information": "Firmeninformation"
   }
 }

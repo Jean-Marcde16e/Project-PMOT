@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useTranslations } from "next-intl";
 
 export function Hero() {
-  const t = useTranslations("homepage.header");
+  const t = useTranslations("Homepage.header");
 
   return (
     <section className="dark:bg-gray-800 dark:text-gray-100 mt-5 sm:mt-12">

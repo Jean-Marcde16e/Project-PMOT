@@ -2,16 +2,35 @@
   "LanguageSelector": {
     "English": "English",
     "Dutch": "Dutch",
-    "German": "German",
-    "en": "English",
-    "nl": "Dutch",
-    "de": "German"
+    "German": "German"
   },
-  "homepage": {
+  "Navbar": {
+    "search": "Search...",
+    "items": {
+      "home": "Home",
+      "webshop": "Webshop",
+      "media": "Media",
+      "publications": "Publications"
+    },
+    "signin": "Sign in",
+    "signup": "Sign up"
+  },
+  "Homepage": {
     "header": {
-      "title": "The specialist for challenging technology materials for schools and private individuals",
-      "subtitle": "PMOT specializes in science and technology for primary and secondary education. ",
-      "cta": "read more"
+      "title": "The specialist for challenging technical materials for schools and individuals",
+      "subtitle": "PMOT specializes in science and technology for primary and secondary education. For this purpose, a specially selected range has been compiled for education, which fits within inquiry-based and design-based learning. Based on 30 years of experience in this field.",
+      "cta": "Read more"
     }
+  },
+  "Footer": {
+    "newsletterTitle": "Sign up for the newsletter",
+    "newsletterSubTitle": "Stay up to date with the latest things!",
+    "form": {
+      "email": "Email",
+      "subscribe": "Subscribe"
+    },
+    "data": "Data",
+    "information": "Information",
+    "company-information": "Company Information"
   }
 }
