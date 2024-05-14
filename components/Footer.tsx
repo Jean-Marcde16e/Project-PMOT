@@ -79,6 +79,11 @@ export function Footer() {
           </div>
         </div>
       </div>
+      <div className="bg-secondary">
+        <p className="text-white text-lg text-center py-2">
+          &#169; {new Date().getFullYear()} PMOT. All rights reserverd.
+        </p>
+      </div>
     </div>
   );
 }
