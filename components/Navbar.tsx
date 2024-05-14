@@ -7,7 +7,6 @@ import {
   ShoppingCart,
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
-import NetherlandsIMG from "../public/netherlands.png";
 import "@fontsource/roboto";
 import {
   DropdownMenu,
@@ -27,7 +26,7 @@ import {
 } from "@/components/ui/sheet";
 import Link from "next/link";
 import Image from "next/image";
-import { Button } from "./button";
+import { Button } from "./ui/button";
 import { UserButton } from "@clerk/nextjs";
 
 export function Navbar() {
@@ -124,8 +123,8 @@ export function Navbar() {
           </DropdownMenu>
         </div>
       </div>
-      <div className="bg-secondary">
-        <div className="flex justify-between items-center mx-auto px-4 sm:px-2 py-4 max-w-7xl">
+      <div className="bg-secondary hidden sm:block">
+        <div className="flex justify-between items-center mx-auto px-4 sm:px-2 py-3 max-w-7xl">
           <div className="flex gap-3 text-white font-roboto">
             <Link
               href="#"

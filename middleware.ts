@@ -1,21 +1,11 @@
 import { clerkMiddleware } from "@clerk/nextjs/server";
 import createMiddleware from 'next-intl/middleware';
 
-export default clerkMiddleware();
 export const config = {
-  matcher: ["/((?!.+.[w]+$|_next).*)", "/", "/(api|trpc)(.*)"],
+  matcher: ["/((?!.+.[w]+$|_next).*)", "/", "/(api|trpc)(.*)", '/(nl|de|en)/:path*'],
 };
 
- 
-export default createMiddleware({
-  // A list of all locales that are supported
-  locales: ['nl', 'en', 'de'],
- 
-  // Used when no locale matches
-  defaultLocale: 'nl'
+export default clerkMiddleware();
+export createMiddleware({
+  
 });
- 
-export const config = {
-  // Match only internationalized pathnames
-  matcher: ['/', '/(nl|de|en)/:path*']
-};
