@@ -48,7 +48,7 @@ export function Navbar() {
             <Button
               variant="outline"
               size="icon"
-              className="md:hidden shrink-0"
+              className="shrink-0 md:hidden"
             >
               <Menu className="w-5 h-5" />
               <span className="sr-only">Toggle navigation menu</span>
@@ -108,7 +108,11 @@ export function Navbar() {
           </Link>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button>
+              <Button
+                variant="outline"
+                size="icon"
+                className="shrink-0 rounded-full"
+              >
                 <CircleUser className="w-6 h-6" />
                 <span className="sr-only">Toggle language menu</span>
               </Button>
@@ -123,15 +127,35 @@ export function Navbar() {
       <div className="bg-secondary">
         <div className="flex justify-between items-center mx-auto px-4 sm:px-2 py-4 max-w-7xl">
           <div className="flex gap-3 text-white font-roboto">
-            <p>Home</p>
-            <p>Webshop</p>
-            <p>Media</p>
-            <p>Publicaties</p>
+            <Link
+              href="#"
+              className="text-muted-foreground hover:text-foreground"
+            >
+              Home
+            </Link>
+            <Link
+              href="#"
+              className="text-muted-foreground hover:text-foreground"
+            >
+              Webshop
+            </Link>
+            <Link
+              href="#"
+              className="text-muted-foreground hover:text-foreground"
+            >
+              Media
+            </Link>
+            <Link
+              href="#"
+              className="text-muted-foreground hover:text-foreground"
+            >
+              Publicaties
+            </Link>
           </div>
           <div>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button>
+                <Button variant={"secondary"}>
                   <Image
                     src="/netherlands.png"
                     className="mr-2"
@@ -139,7 +163,7 @@ export function Navbar() {
                     height={10}
                     width={15}
                   />
-                  hallo
+                  Dutch
                   <ChevronUp className="rotate-180" />
                   <span className="sr-only">Toggle language menu</span>
                 </Button>
@@ -156,9 +180,28 @@ export function Navbar() {
                   />
                   Dutch
                 </DropdownMenuItem>
-                <DropdownMenuItem>English</DropdownMenuItem>
-                <DropdownMenuItem>German</DropdownMenuItem>
                 <DropdownMenuSeparator />
+                <DropdownMenuItem>
+                  <Image
+                    src="/us.png"
+                    className="mr-2"
+                    alt="Logo"
+                    height={10}
+                    width={15}
+                  />
+                  English
+                </DropdownMenuItem>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem>
+                  <Image
+                    src="/germany.png"
+                    className="mr-2"
+                    alt="Logo"
+                    height={10}
+                    width={15}
+                  />
+                  German
+                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
           </div>
