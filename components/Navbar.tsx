@@ -1,8 +1,6 @@
 import {
-  ChevronUp,
   CircleUser,
   Menu,
-  Package2,
   Search,
   ShoppingCart,
 } from "lucide-react";
@@ -13,23 +11,18 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import Link from "next/link";
+import Link from "@/lib/Link";
 import Image from "next/image";
 import { Button } from "./ui/button";
-import { UserButton } from "@clerk/nextjs";
 import { useTranslations } from "next-intl";
+import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 export function Navbar() {
   const t = useTranslations("Navbar");
 
@@ -116,9 +109,10 @@ export function Navbar() {
                 <span className="sr-only">Toggle language menu</span>
               </Button>
             </DropdownMenuTrigger>
+            <SignedOut>
             <DropdownMenuContent align="end">
               <DropdownMenuItem>
-                <Link href="/login" className="flex items-center gap-2">
+                <Link href="/sign-in" className="flex items-center gap-2">
                   {t("signin")}
                 </Link>
               </DropdownMenuItem>
@@ -128,6 +122,10 @@ export function Navbar() {
                 </Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
+            </SignedOut>
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
           </DropdownMenu>
         </div>
       </div>
