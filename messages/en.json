@@ -1,0 +1,17 @@
+{
+  "LanguageSelector": {
+    "English": "English",
+    "Dutch": "Dutch",
+    "German": "German",
+    "en": "English",
+    "nl": "Dutch",
+    "de": "German"
+  },
+  "homepage": {
+    "header": {
+      "title": "The specialist for challenging technology materials for schools and private individuals",
+      "subtitle": "PMOT specializes in science and technology for primary and secondary education. ",
+      "cta": "read more"
+    }
+  }
+}

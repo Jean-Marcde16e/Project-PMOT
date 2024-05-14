@@ -1,0 +1,17 @@
+{
+  "LanguageSelector": {
+    "English": "Engels",
+    "Dutch": "Nederlands",
+    "German": "Duits",
+    "en": "Engels",
+    "nl": "Nederlands",
+    "de": "Duits"
+  },
+  "homepage": {
+    "header": {
+      "title": "De specialist voor uitdagende techniek materialen voor school en particulier",
+      "subtitle": "PMOT is gespecialiseerd in wetenschap en techniek voor de basisschool en het voortgezet onderwijs. Hiervoor is een, speciaal voor het onderwijs uitgeselecteerd assortiment  samengesteld, dat past binnen onderzoekend en ontwerpend leren. Gebaseerd op 30 jaar ervaring binnen dit leergebied.",
+      "cta": "Lees meer"
+    }
+  }
+}

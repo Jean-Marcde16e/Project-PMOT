@@ -7,6 +7,7 @@ import {
   ShoppingCart,
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
+import LanguageSelector from "./LanguageSelector";
 import "@fontsource/roboto";
 import {
   DropdownMenu,
@@ -65,29 +66,27 @@ export function Navbar() {
                 href="#"
                 className="text-muted-foreground hover:text-foreground"
               >
-                Dashboard
+                Home
               </Link>
               <Link
                 href="#"
                 className="text-muted-foreground hover:text-foreground"
               >
-                Orders
+                Webshop
               </Link>
               <Link
                 href="#"
                 className="text-muted-foreground hover:text-foreground"
               >
-                Products
+                Media
               </Link>
               <Link
                 href="#"
                 className="text-muted-foreground hover:text-foreground"
               >
-                Customers
+                Publicaties
               </Link>
-              <Link href="#" className="hover:text-foreground">
-                Settings
-              </Link>
+              <LanguageSelector />
             </nav>
           </SheetContent>
         </Sheet>
@@ -117,8 +116,16 @@ export function Navbar() {
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
-              <DropdownMenuItem>Inloggen</DropdownMenuItem>
-              <DropdownMenuItem>Registreren</DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link href="/inloggen" className="flex items-center gap-2">
+                  Inloggen
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link href="/registreren" className="flex items-center gap-2">
+                  Registreren
+                </Link>
+              </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
         </div>
@@ -152,57 +159,7 @@ export function Navbar() {
             </Link>
           </div>
           <div>
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant={"secondary"}>
-                  <Image
-                    src="/netherlands.png"
-                    className="mr-2"
-                    alt="Logo"
-                    height={10}
-                    width={15}
-                  />
-                  Dutch
-                  <ChevronUp className="rotate-180" />
-                  <span className="sr-only">Toggle language menu</span>
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                <DropdownMenuItem>
-                  {" "}
-                  <Image
-                    src="/netherlands.png"
-                    className="mr-2"
-                    alt="Logo"
-                    height={10}
-                    width={15}
-                  />
-                  Dutch
-                </DropdownMenuItem>
-                <DropdownMenuSeparator />
-                <DropdownMenuItem>
-                  <Image
-                    src="/us.png"
-                    className="mr-2"
-                    alt="Logo"
-                    height={10}
-                    width={15}
-                  />
-                  English
-                </DropdownMenuItem>
-                <DropdownMenuSeparator />
-                <DropdownMenuItem>
-                  <Image
-                    src="/germany.png"
-                    className="mr-2"
-                    alt="Logo"
-                    height={10}
-                    width={15}
-                  />
-                  German
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
+            <LanguageSelector />
           </div>
         </div>
       </div>
