@@ -22,7 +22,8 @@ import Link from "@/lib/Link";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { useTranslations } from "next-intl";
-import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import { ClerkLoading, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import { Skeleton } from "./ui/skeleton";
 export function Navbar() {
   const t = useTranslations("Navbar");
 
@@ -98,6 +99,8 @@ export function Navbar() {
           <Link href="#" className="hover:text-foreground">
             <ShoppingCart className="w-6 h-6" />
           </Link>
+          <SignedOut>
+
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button
@@ -109,8 +112,7 @@ export function Navbar() {
                 <span className="sr-only">Toggle language menu</span>
               </Button>
             </DropdownMenuTrigger>
-            <SignedOut>
-            <DropdownMenuContent align="end">
+           <DropdownMenuContent align="end">
               <DropdownMenuItem>
                 <Link href="/sign-in" className="flex items-center gap-2">
                   {t("signin")}
@@ -122,11 +124,14 @@ export function Navbar() {
                 </Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
-            </SignedOut>
-            <SignedIn>
+          </DropdownMenu>
+          </SignedOut>
+          <SignedIn>
+          <ClerkLoading>
+          <Skeleton className="w-[30px] h-[30px] rounded-full" />
+            </ClerkLoading>
               <UserButton />
             </SignedIn>
-          </DropdownMenu>
         </div>
       </div>
       <div className="bg-secondary hidden sm:block">
