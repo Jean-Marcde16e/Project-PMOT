@@ -30,7 +30,6 @@ import Image from "next/image";
 import { Button } from "./ui/button";
 import { UserButton } from "@clerk/nextjs";
 import { useTranslations } from "next-intl";
-import { SignedIn } from "@clerk/nextjs";
 export function Navbar() {
   const t = useTranslations("Navbar");
 
@@ -117,7 +116,6 @@ export function Navbar() {
                 <span className="sr-only">Toggle language menu</span>
               </Button>
             </DropdownMenuTrigger>
-            <SignedIn></SignedIn>
             <DropdownMenuContent align="end">
               <DropdownMenuItem>
                 <Link href="/login" className="flex items-center gap-2">
@@ -135,6 +133,10 @@ export function Navbar() {
       </div>
       <div className="bg-secondary hidden sm:block">
         <div className="flex justify-between items-center mx-auto px-4 sm:px-2 py-3 max-w-7xl">
+          <div className="flex gap-1 text-white">
+            <Menu />
+            <p className="font-roboto">{t("categories")}</p>
+          </div>
           <div className="flex gap-3 text-white font-roboto">
             <Link
               href="#"
