@@ -9,10 +9,10 @@ export function Hero() {
       <div className="flex justify-between flex-col-reverse sm:flex-row">
         <div className="sm:pr-5">
           <div className="sm:pr-12">
-            <h1 className="text-xl md:text-4xl font-bold mt-4 text-tertiary sm:mt-0">
+            <h1 className="text-xl md:text-4xl font-bold font-monserrat mt-4 text-tertiary sm:mt-0">
               {t("title")}
             </h1>
-            <p className="mt-5 mb-8 text-lg sm:mb-12 text-left">
+            <p className="mt-5 mb-8 text-lg sm:mb-12 font-roboto text-left">
               {t("subtitle")}
             </p>
           </div>

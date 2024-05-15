@@ -43,7 +43,7 @@ const ReviewsList = [
   },
   {
     name: "Jimbo",
-    country: "belgie",
+    country: "belgium",
     date: "21-11-2016",
     text: "Had als particulier een els/priem nodig, ben tevreden van Narex, en PMOT was &eacute;&eacute;n vd weinige webwinkels die de priemen van Narex kon leveren, en dan nog aan een z&eacute;&eacute;r schappelijke prijs. Snelle levering, degelijk verpakt: tevreden klant!",
     stars: 5,
@@ -105,9 +105,9 @@ export function Reviews() {
                 <CardContent className="flex flex-col aspect-square items-center justify-center p-6">
                   <p className="text-center">"{review.text}"</p>
                   <div className="my-4 text-center">
-                    <div className="flex gap-2">
+                    <div className="flex items-center gap-2">
                       <Image
-                        src="/netherlands.png"
+                        src={"/" + review.country + ".png"}
                         className=""
                         alt="Logo"
                         height={15}

@@ -44,7 +44,8 @@ const config = {
         "caret-blink": "caret-blink 1.25s ease-out infinite",
       },
       fontFamily: {
-        monserrat: ['Secular One', 'sans-serif'],
+        monserrat: ['Montserrat Variable', 'sans-serif'],
+        // 'Montserrat Variable', sans-serif;
         roboto: ['Roboto', 'sans-serif'],
     },
     },

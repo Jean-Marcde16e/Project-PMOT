@@ -11,7 +11,6 @@ export function Footer() {
   return (
     <div className="bg-primary mt-12">
       <div className="mx-auto px-4 sm:px-2 py-4 max-w-7xl">
-        <div>hallo</div>
         <div className="flex flex-col sm:flex-row justify-between my-24">
           <div className="mx-auto sm:mx-0">
             <Image src="/logo-big.png" alt="Logo" height={100} width={200} />
@@ -80,7 +79,7 @@ export function Footer() {
         </div>
       </div>
       <div className="bg-secondary">
-        <p className="text-white text-lg text-center py-1">
+        <p className="text-white text-lg text-center py-2">
           &#169; {new Date().getFullYear()} PMOT. All rights reserverd.
         </p>
       </div>
