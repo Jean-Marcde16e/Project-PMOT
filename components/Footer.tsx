@@ -80,7 +80,7 @@ export function Footer() {
         </div>
       </div>
       <div className="bg-secondary">
-        <p className="text-white text-lg text-center py-2">
+        <p className="text-white text-lg text-center py-1">
           &#169; {new Date().getFullYear()} PMOT. All rights reserverd.
         </p>
       </div>

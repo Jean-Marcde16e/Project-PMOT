@@ -20,9 +20,15 @@ export function Hero() {
           <div className="text-center sm:text-left">
             <Link
               href="#"
-              className="px-5 py-3 text-lg font-semibold border rounded-md bg-secondary text-white"
+              className="px-5 py-3 text-md font-semibold border rounded-md bg-secondary text-white"
             >
               {t("cta")}
+            </Link>
+            <Link
+              href="#"
+              className="px-6 py-3 ml-3 text-md font-semibold border rounded-md outline outline-gray-200 outline-1 text-black"
+            >
+              {t("cta_shop")}
             </Link>
           </div>
         </div>

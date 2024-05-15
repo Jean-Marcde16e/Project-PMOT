@@ -24,6 +24,7 @@ import { Button } from "./ui/button";
 import { useTranslations } from "next-intl";
 import { ClerkLoading, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import { Skeleton } from "./ui/skeleton";
+import { Categories } from "./Categories";
 export function Navbar() {
   const t = useTranslations("Navbar");
 
@@ -100,45 +101,45 @@ export function Navbar() {
             <ShoppingCart className="w-6 h-6" />
           </Link>
           <SignedOut>
-
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button
-                variant="outline"
-                size="icon"
-                className="shrink-0 rounded-full"
-              >
-                <CircleUser className="w-6 h-6" />
-                <span className="sr-only">Toggle language menu</span>
-              </Button>
-            </DropdownMenuTrigger>
-           <DropdownMenuContent align="end">
-              <DropdownMenuItem>
-                <Link href="/sign-in" className="flex items-center gap-2">
-                  {t("signin")}
-                </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <Link href="/sign-up" className="flex items-center gap-2">
-                  {t("signup")}
-                </Link>
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button
+                  variant="outline"
+                  size="icon"
+                  className="shrink-0 rounded-full"
+                >
+                  <CircleUser className="w-6 h-6" />
+                  <span className="sr-only">Toggle language menu</span>
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end">
+                <DropdownMenuItem>
+                  <Link href="/sign-in" className="flex items-center gap-2">
+                    {t("signin")}
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  <Link href="/sign-up" className="flex items-center gap-2">
+                    {t("signup")}
+                  </Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </SignedOut>
           <SignedIn>
-          <ClerkLoading>
-          <Skeleton className="w-[30px] h-[30px] rounded-full" />
+            <ClerkLoading>
+              <Skeleton className="w-[30px] h-[30px] rounded-full" />
             </ClerkLoading>
-              <UserButton />
-            </SignedIn>
+            <UserButton />
+          </SignedIn>
         </div>
       </div>
       <div className="bg-secondary hidden sm:block">
         <div className="flex justify-between items-center mx-auto px-4 sm:px-2 py-3 max-w-7xl">
           <div className="flex gap-1 text-white">
-            <Menu />
-            <p className="font-roboto">{t("categories")}</p>
+            {/* <Menu /> */}
+            <Categories />
+            {/* <p className="font-roboto">{t("categories")}</p> */}
           </div>
           <div className="flex gap-3 text-white font-roboto">
             <Link
