@@ -1,3 +1,4 @@
+import Headline from "@/components/Headline";
 import { Hero } from "@/components/Hero";
 import { Information } from "@/components/Information";
 import { Reviews } from "@/components/Reviews";

@@ -71,7 +71,7 @@ function LanguageSelector() {
           <span className="text-sm font-semibold text-white">
             {getLanguageLabel(selectedLanguage)}
           </span>
-          <ChevronUp className="rotate-180 hover:text-black text-white" />
+          <ChevronUp className="rotate-180 text-white" />
           <span className="sr-only">Toggle language menu</span>
         </button>
       </DropdownMenuTrigger>
