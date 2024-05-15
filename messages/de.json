@@ -13,25 +13,55 @@
       "publications": "Veröffentlichungen"
     },
     "categories": "Kategorien",
+    "categorieSheetItems": {
+      "robots": "Robotik",
+      "renewable_energy": "Erneuerbare Energie",
+      "electricity": "Elektrizität & Magnetismus",
+      "physics": "Physik",
+      "compact_building_blocks": "Kompakte Bausteine",
+      "wood_sets": "Technik-Holzsets",
+      "calculate": "Rechnen",
+      "giftedness": "Begabung",
+      "storage_systems": "Aufbewahrungssysteme",
+      "workbenches_etc": "Werkbänke, Tische und Zubehör",
+      "tools": "Werkzeuge",
+      "discount": "Angebot",
+      "textbooks": "Lehrbücher",
+      "gigo_tech": "Gigo Technik",
+      "brick_r_knowledge": "Brick”R”knowledge",
+      "gigo_learning_lab": "Gigo Learning Lab",
+      "not_gigo_techsets": "Nicht-Gigo Techniksets",
+      "loose_parts": "Lose Technikteile"
+    },
     "signin": "Anmelden",
     "signup": "Registrieren"
   },
   "Homepage": {
     "header": {
-      "title": "Der Spezialist für anspruchsvolle technische Materialien für Schule und Privatpersonen",
-      "subtitle": "PMOT ist auf Wissenschaft und Technik für Grund- und Sekundarschulen spezialisiert. Hierfür wurde ein speziell für den Bildungsbereich ausgewähltes Sortiment zusammengestellt, das in forschendes und entwerfendes Lernen passt. Basierend auf 30 Jahren Erfahrung in diesem Lernbereich.",
-      "cta": "Mehr erfahren"
+      "title": "Der Spezialist für herausfordernde technische Materialien für Schule und Privat",
+      "subtitle": "PMOT ist spezialisiert auf Wissenschaft und Technik für Grund- und weiterführende Schulen. Dafür wurde ein speziell für den Unterricht ausgewähltes Sortiment zusammengestellt, das innerhalb forschenden und entwerfenden Lernens passt. Basierend auf 30 Jahren Erfahrung in diesem Lernbereich.",
+      "cta": "Mehr lesen >",
+      "cta_shop": "Jetzt einkaufen >"
+    },
+    "information": {
+      "webshopTitle": "Webshop",
+      "webshopSubtitle": "Besuchen Sie unseren Webshop für ein umfangreiches Sortiment an Robotern.",
+      "mediaTitle": "Medien",
+      "mediaSubtitle": "Besuchen Sie unsere Medien für ein umfangreiches Medienangebot.",
+      "publicationsTitle": "Veröffentlichungen",
+      "publicationsSubtitle": "Besuchen Sie unsere Veröffentlichungen für ein umfangreiches Veröffentlichungsangebot.",
+      "cta": "Ansehen"
     }
   },
   "Footer": {
-    "newsletterTitle": "Für den Newsletter anmelden",
-    "newsletterSubTitle": "Bleiben Sie auf dem neuesten Stand!",
+    "newsletterTitle": "Für Newsletter anmelden",
+    "newsletterSubTitle": "Bleiben Sie über die neuesten Dinge informiert!",
     "form": {
-      "email": "Email",
+      "email": "E-Mail",
       "subscribe": "Abonnieren"
     },
     "data": "Daten",
-    "information": "Information",
-    "company-information": "Firmeninformation"
+    "information": "Informationen",
+    "company-information": "Firmeninformationen"
   }
 }
