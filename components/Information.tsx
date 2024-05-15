@@ -1,12 +1,14 @@
 import { ImagePlus, NotepadText, Store } from "lucide-react";
 import { Button } from "./ui/button";
 import { useTranslations } from "next-intl";
+import Headline from "./Headline";
 
 export function Information() {
   const t = useTranslations("Homepage.information");
   return (
-    <div className="bg-primary rounded-md mt-20">
-      <div className="flex flex-col sm:flex-row justify-between">
+    <div className="mt-20">
+      <Headline Text="Pagina's" />
+      <div className="flex flex-col bg-primary rounded-lg sm:flex-row mx-auto px-4 sm:px-2 py-4 max-w-7xl justify-between">
         <div className="text-center p-4 my-2">
           <Store className="mx-auto my-2" size={40} />
           <h1 className="text-xl font-bold">{t("webshopTitle")}</h1>
