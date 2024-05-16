@@ -59,25 +59,25 @@ export function Navbar() {
                 <Image src="/logo.png" alt="Logo" height={100} width={200} />
               </Link>
               <Link
-                href="#"
+                href="/"
                 className="text-muted-foreground hover:text-foreground"
               >
                 {t("items.home")}
               </Link>
               <Link
-                href="/webshop/categorylist"
+                href="/webshop"
                 className="text-muted-foreground hover:text-foreground"
               >
                 {t("items.webshop")}
               </Link>
               <Link
-                href="/products"
+                href="/media"
                 className="text-muted-foreground hover:text-foreground"
               >
                 {t("items.media")}
               </Link>
               <Link
-                href="#"
+                href="/publications"
                 className="text-muted-foreground hover:text-foreground"
               >
                 {t("items.publications")}
@@ -137,30 +137,29 @@ export function Navbar() {
       <div className="bg-secondary hidden sm:block">
         <div className="flex justify-between items-center mx-auto px-4 sm:px-2 py-3 max-w-7xl">
           <div className="flex gap-1 text-white">
-            <Categories />
-            <p className="font-roboto">{t("categories")}</p>
+            <Categories translations={t("categories")} />
           </div>
           <div className="flex gap-3 text-white font-roboto">
             <Link
-              href="#"
+              href="/"
               className="text-muted-foreground hover:text-foreground"
             >
               {t("items.home")}
             </Link>
             <Link
-              href="/webshop/categorylist"
+              href="/webshop"
               className="text-muted-foreground hover:text-foreground"
             >
               {t("items.webshop")}
             </Link>
             <Link
-              href="#"
+              href="/media"
               className="text-muted-foreground hover:text-foreground"
             >
               {t("items.media")}
             </Link>
             <Link
-              href="#"
+              href="/publications"
               className="text-muted-foreground hover:text-foreground"
             >
               {t("items.publications")}

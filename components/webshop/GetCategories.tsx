@@ -32,7 +32,6 @@ export function GetCategories() {
         });
         const data = res.data;
         if (data) {
-          console.log(data);
           setCategoriesList(data);
           setLoading(false);
         } else {
@@ -49,17 +48,12 @@ export function GetCategories() {
     <>
       {CategoriesList.map((category, index) => {
         return (
-          //   <Link
-          //     href={`/webshop/category/${category.attributes.Name}`}
-          //     key={index}
-          //   >
           <CategoryCard
             key={index}
             Image={category.attributes.Image.data.attributes.url}
             CategorySlug={category.attributes.slug}
             Title={category.attributes.Name}
           />
-          //   </Link>
         );
       })}
     </>

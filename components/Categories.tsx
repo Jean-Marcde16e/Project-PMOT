@@ -9,7 +9,6 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { ChevronRight, Menu } from "lucide-react";
-import { useTranslations } from "next-intl";
 import { Separator } from "@/components/ui/separator";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { usePathname } from 'next/navigation';
@@ -23,11 +22,9 @@ interface Data {
   };
 }
 
-export function Categories() {
+export function Categories({translations}: {translations: string}) {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState<Data[]>([]);
-
-  const t = useTranslations("Navbar");
 
   const pathname = usePathname();
 
@@ -65,6 +62,7 @@ export function Categories() {
       <SheetTrigger asChild>
         <p className="font-roboto cursor-pointer flex gap-1">
           <Menu />
+          <span className="font-roboto">{translations}</span>
         </p>
       </SheetTrigger>
       <SheetContent side="left">
