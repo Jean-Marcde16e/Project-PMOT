@@ -1,11 +1,10 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+'use client';
+
+import { useState, useEffect } from 'react';
+import Image from "next/image";
 import {
   Sheet,
-  SheetClose,
   SheetContent,
-  SheetDescription,
   SheetFooter,
   SheetHeader,
   SheetTitle,
@@ -13,19 +12,61 @@ import {
 } from "@/components/ui/sheet";
 import { ChevronRight, Menu } from "lucide-react";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { usePathname } from 'next/navigation';
+import StrapiHelper from '@/app/helpers/strapiHelper';
+import Link from '@/lib/Link';
+
+interface Data {
+  attributes: {
+    Name: string;
+    slug: string;
+  };
+}
 
 export function Categories() {
+  const [loading, setLoading] = useState(true);
+  const [data, setData] = useState<Data[]>([]);
+
   const t = useTranslations("Navbar");
+
+  const pathname = usePathname();
+
+  const locale = pathname.split("/")[1] || "en";
+
+  useEffect(() => {
+      const getStrapiData = async () => {
+          const strapiHelper = new StrapiHelper();
+
+          try {
+              const res = await strapiHelper.getStrapiData({
+                  query: `/categories?locale=${locale}`,
+              });
+
+              const data = res.data;
+
+              if (data) {
+                  setData(data);
+                  setLoading(false);
+              } else {
+                  console.error("No data found");
+              }
+          } catch (error) {
+              console.error("Error fetching Strapi data:", error);
+          }
+      };
+
+      if (locale) {
+          getStrapiData();
+      }
+  }, [locale]);
 
   return (
     <Sheet key="left">
       <SheetTrigger asChild>
         <p className="font-roboto cursor-pointer flex gap-1">
           <Menu />
-          {t("categories")}
         </p>
       </SheetTrigger>
       <SheetContent side="left">
@@ -33,93 +74,20 @@ export function Categories() {
           <Image src="/logo.png" alt="Logo" height={75} width={150} />
         </SheetHeader>
         <Separator className="my-4" />
-        <SheetTitle>Alle Categorieën</SheetTitle>
-
         <ScrollArea className="h-full w-full rounded-md">
-          <div className="grid gap-4 py-4">
-            <div className="flex justify-between hover:bg-gray-100 py-3 px-2 mr-5 rounded-md">
-              <p>{t("categorieSheetItems.robots")}</p>
-              <ChevronRight />
-            </div>
-            <div className="flex justify-between hover:bg-gray-100 py-3 px-2 mr-5 rounded-md">
-              <p>{t("categorieSheetItems.renewable_energy")}</p>
-              <ChevronRight />
-            </div>
-            <div className="flex justify-between hover:bg-gray-100 py-3 px-2 mr-5 rounded-md">
-              <p>{t("categorieSheetItems.electricity")}</p>
-              <ChevronRight />
-            </div>
-            <div className="flex justify-between hover:bg-gray-100 py-3 px-2 mr-5 rounded-md">
-              <p>{t("categorieSheetItems.physics")}</p>
-              <ChevronRight />
-            </div>
-            <div className="flex justify-between hover:bg-gray-100 py-3 px-2 mr-5 rounded-md">
-              <p>{t("categorieSheetItems.compact_building_blocks")}</p>
-              <ChevronRight />
-            </div>
-            <div className="flex justify-between hover:bg-gray-100 py-3 px-2 mr-5 rounded-md">
-              <p>{t("categorieSheetItems.wood_sets")}</p>
-              <ChevronRight />
-            </div>
-            <div className="flex justify-between hover:bg-gray-100 py-3 px-2 mr-5 rounded-md">
-              <p>{t("categorieSheetItems.calculate")}</p>
-              <ChevronRight />
-            </div>
-            <div className="flex justify-between hover:bg-gray-100 py-3 px-2 mr-5 rounded-md">
-              <p>{t("categorieSheetItems.giftedness")}</p>
-              <ChevronRight />
-            </div>
-            <div className="flex justify-between hover:bg-gray-100 py-3 px-2 mr-5 rounded-md">
-              <p>{t("categorieSheetItems.storage_systems")}</p>
-              <ChevronRight />
-            </div>
-            <div className="flex justify-between hover:bg-gray-100 py-3 px-2 mr-5 rounded-md">
-              <p>{t("categorieSheetItems.workbenches_etc")}</p>
-              <ChevronRight />
-            </div>
-            <div className="flex justify-between hover:bg-gray-100 py-3 px-2 mr-5 rounded-md">
-              <p>{t("categorieSheetItems.tools")}</p>
-              <ChevronRight />
-            </div>
-            <div className="flex justify-between hover:bg-gray-100 py-3 px-2 mr-5 rounded-md">
-              <p>{t("categorieSheetItems.discount")}</p>
-              <ChevronRight />
-            </div>
-            <div className="flex justify-between hover:bg-gray-100 py-3 px-2 mr-5 rounded-md">
-              <p>{t("categorieSheetItems.textbooks")}</p>
-              <ChevronRight />
-            </div>
-            <div className="flex justify-between hover:bg-gray-100 py-3 px-2 mr-5 rounded-md">
-              <p>{t("categorieSheetItems.gigo_tech")}</p>
-              <ChevronRight />
-            </div>
-            <div className="flex justify-between hover:bg-gray-100 py-3 px-2 mr-5 rounded-md">
-              <p>{t("categorieSheetItems.brick_r_knowledge")}</p>
-              <ChevronRight />
-            </div>
-            <div className="flex justify-between hover:bg-gray-100 py-3 px-2 mr-5 rounded-md">
-              <p>{t("categorieSheetItems.gigo_learning_lab")}</p>
-              <ChevronRight />
-            </div>
-            <div className="flex justify-between hover:bg-gray-100 py-3 px-2 mr-5 rounded-md">
-              <p>{t("categorieSheetItems.not_gigo_techsets")}</p>
-              <ChevronRight />
-            </div>
-            <div className="flex justify-between hover:bg-gray-100 py-3 px-2 mr-5 rounded-md">
-              <p>{t("categorieSheetItems.loose_parts")}</p>
-              <ChevronRight />
-            </div>
-            <div className="flex justify-between hover:bg-gray-100 py-3 px-2 mr-5 rounded-md">
-              <p>{t("categorieSheetItems.loose_parts")}</p>
-              <ChevronRight />
-            </div>
-          </div>
+        {        
+          data.map((item, index) => (
+            <Link key={index} href={`/categories/${item.attributes.slug}`}>
+              <div className="grid gap-4 py-2">
+                <div className="flex justify-between hover:bg-gray-100 py-4 px-2 mr-5 rounded-md">
+                  <p>{item.attributes.Name}</p>
+                  <ChevronRight />
+                </div>
+              </div>
+            </Link>
+          ))
+        }
         </ScrollArea>
-        <SheetFooter>
-          {/* <SheetClose asChild>
-            <Button type="submit">Save changes</Button>
-          </SheetClose> */}
-        </SheetFooter>
       </SheetContent>
     </Sheet>
   );

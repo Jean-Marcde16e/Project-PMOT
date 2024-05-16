@@ -1,8 +1,10 @@
+'use client';
+
 import React from "react";
 import NextLink from "next/link";
-import { getLocale } from "next-intl/server";
+import { usePathname } from "next/navigation";
 
-async function Link({
+function Link({
     href,
     children,
     ...props
@@ -11,7 +13,9 @@ async function Link({
     children: React.ReactNode;
     [key: string]: any;
 }) {
-    const locale = await getLocale();
+    const pathname = usePathname();
+    const locale = pathname.split("/")[1] || "en";
+
     return (
         <NextLink
             {...props}

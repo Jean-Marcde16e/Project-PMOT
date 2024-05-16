@@ -14,22 +14,7 @@ export function Hero() {
     const [subtitle, setSubtitle] = useState("");
     const pathname = usePathname();
 
-<<<<<<< HEAD
-    const locale = pathname.split("/")[1] || "en"; // default to 'en' if locale is not found
-=======
-  return (
-    <section className="dark:bg-gray-800 dark:text-gray-100 mt-5 sm:mt-12">
-      <div className="flex justify-between flex-col-reverse sm:flex-row">
-        <div className="sm:pr-5">
-          <div className="sm:pr-12">
-            <h1 className="text-xl md:text-4xl font-bold font-monserrat mt-4 text-tertiary sm:mt-0">
-              {t("title")}
-            </h1>
-            <p className="mt-5 mb-8 text-lg sm:mb-12 font-roboto text-left">
-              {t("subtitle")}
-            </p>
-          </div>
->>>>>>> c09e31c481f4455f774fab18ad27b3599c7afe25
+    const locale = pathname.split("/")[1] || "en";
 
     const t = useTranslations("Homepage.header");
 
