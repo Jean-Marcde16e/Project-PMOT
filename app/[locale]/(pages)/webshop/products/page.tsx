@@ -3,22 +3,23 @@ import React from "react";
 
 import {
   Breadcrumb,
-  BreadcrumbEllipsis,
+  // BreadcrumbEllipsis,
   BreadcrumbItem,
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import { Input } from "@/components/ui/input";
+// import { Input } from "@/components/ui/input";
 import Link from "@/lib/Link";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+// import {
+//   Accordion,
+//   AccordionContent,
+//   AccordionItem,
+//   AccordionTrigger,
+// } from "@/components/ui/accordion";
 import { WebshopFilter } from "@/components/webshop/WebshopFilter";
+import Headline from "@/components/Headline";
 
 function ProductPage() {
   return (
@@ -40,6 +41,9 @@ function ProductPage() {
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
+          {/* Hier moet de titel van de producten met de categorie */}
+          <Headline Text="Products" />
+          {/* Hier moet de titel van de producten met de categorie */}
         </div>
         <div className="flex flex-col sm:flex-row gap-12 mt-12">
           <div id="filter-system" className="mt-">
