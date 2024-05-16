@@ -65,7 +65,7 @@ export function Navbar() {
                 {t("items.home")}
               </Link>
               <Link
-                href="#"
+                href="/webshop/products"
                 className="text-muted-foreground hover:text-foreground"
               >
                 {t("items.webshop")}
@@ -149,7 +149,7 @@ export function Navbar() {
               {t("items.home")}
             </Link>
             <Link
-              href="/products"
+              href="/webshop/products"
               className="text-muted-foreground hover:text-foreground"
             >
               {t("items.webshop")}
