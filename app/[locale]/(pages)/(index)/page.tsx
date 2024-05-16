@@ -1,7 +1,7 @@
 import Headline from "@/components/Headline";
-import { Hero } from "@/components/Hero";
-import { Information } from "@/components/Information";
-import { Reviews } from "@/components/Reviews";
+import { Hero } from "@/components/index/Hero";
+import { Information } from "@/components/index/Information";
+import { Reviews } from "@/components/index/Reviews";
 
 export default function HomePage() {
   return (

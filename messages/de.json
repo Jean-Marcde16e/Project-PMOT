@@ -18,50 +18,57 @@
       "renewable_energy": "Erneuerbare Energie",
       "electricity": "Elektrizität & Magnetismus",
       "physics": "Physik",
-      "compact_building_blocks": "Kompakte Bausteine",
-      "wood_sets": "Technik-Holzsets",
-      "calculate": "Rechnen",
-      "giftedness": "Begabung",
+      "compact_building_blocks": "Kompakte Modellbausteine",
+      "wood_sets": "Holztechniksets",
+      "calculate": "Berechnen",
+      "giftedness": "Hochbegabung",
       "storage_systems": "Aufbewahrungssysteme",
       "workbenches_etc": "Werkbänke, Tische und Zubehör",
       "tools": "Werkzeuge",
       "discount": "Angebot",
       "textbooks": "Lehrbücher",
-      "gigo_tech": "Gigo Technik",
+      "gigo_tech": "Gigo-Technik",
       "brick_r_knowledge": "Brick”R”knowledge",
       "gigo_learning_lab": "Gigo Learning Lab",
-      "not_gigo_techsets": "Nicht-Gigo Techniksets",
-      "loose_parts": "Lose Technikteile"
+      "not_gigo_techsets": "Nicht Gigo-Techniksets",
+      "loose_parts": "Einzelteile Technik"
     },
     "signin": "Anmelden",
     "signup": "Registrieren"
   },
   "Homepage": {
     "header": {
-      "title": "Der Spezialist für herausfordernde technische Materialien für Schule und Privat",
-      "subtitle": "PMOT ist spezialisiert auf Wissenschaft und Technik für Grund- und weiterführende Schulen. Dafür wurde ein speziell für den Unterricht ausgewähltes Sortiment zusammengestellt, das innerhalb forschenden und entwerfenden Lernens passt. Basierend auf 30 Jahren Erfahrung in diesem Lernbereich.",
-      "cta": "Mehr lesen >",
+      "title": "Der Spezialist für anspruchsvolle Technikmaterialien für Schule und Privatpersonen",
+      "subtitle": "PMOT ist spezialisiert auf Wissenschaft und Technik für die Grund- und weiterführende Schule. Dafür wurde eine speziell für Bildungszwecke ausgewählte Sortiment zusammengestellt, das sich in forschendem und gestaltendem Lernen widerspiegelt. Basierend auf 30 Jahren Erfahrung in diesem Bildungsbereich.",
+      "cta": "Mehr erfahren >",
       "cta_shop": "Jetzt einkaufen >"
     },
     "information": {
       "webshopTitle": "Webshop",
-      "webshopSubtitle": "Besuchen Sie unseren Webshop für ein umfangreiches Sortiment an Robotern.",
+      "webshopSubtitle": "Besuchen Sie unseren Webshop für eine umfangreiche Auswahl an Robotern.",
       "mediaTitle": "Medien",
       "mediaSubtitle": "Besuchen Sie unsere Medien für ein umfangreiches Medienangebot.",
       "publicationsTitle": "Veröffentlichungen",
-      "publicationsSubtitle": "Besuchen Sie unsere Veröffentlichungen für ein umfangreiches Veröffentlichungsangebot.",
+      "publicationsSubtitle": "Besuchen Sie unsere Veröffentlichungen für ein umfangreiches Angebot an Publikationen.",
       "cta": "Ansehen"
     }
   },
+  "Shoppingcart": {
+    "summary": "Warenkorbübersicht",
+    "subtotal": "Zwischensumme",
+    "shipping": "Versandkosten",
+    "total": "Gesamt",
+    "confirm_order": "Bestellung bestätigen"
+  },
   "Footer": {
-    "newsletterTitle": "Für Newsletter anmelden",
-    "newsletterSubTitle": "Bleiben Sie über die neuesten Dinge informiert!",
+    "newsletterTitle": "Anmeldung für Newsletter",
+    "newsletterSubTitle": "Bleiben Sie über die neuesten Entwicklungen informiert!",
     "form": {
       "email": "E-Mail",
       "subscribe": "Abonnieren"
     },
     "data": "Daten",
     "information": "Informationen",
-    "company-information": "Firmeninformationen"
+    "company-information": "Unternehmensinformationen"
   }
 }

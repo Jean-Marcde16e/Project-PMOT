@@ -15,53 +15,60 @@
     "categories": "Categories",
     "categorieSheetItems": {
       "robots": "Robotics",
-      "renewable_energy": "Renewable energy",
-      "electricity": "Electricity & magnetism",
+      "renewable_energy": "Renewable Energy",
+      "electricity": "Electricity & Magnetism",
       "physics": "Physics",
-      "compact_building_blocks": "Compact building blocks",
-      "wood_sets": "Wooden technical sets",
+      "compact_building_blocks": "Compact Building Blocks",
+      "wood_sets": "Wooden Engineering Sets",
       "calculate": "Calculate",
       "giftedness": "Giftedness",
-      "storage_systems": "Storage systems",
-      "workbenches_etc": "Workbenches, tables, and accessories",
+      "storage_systems": "Storage Systems",
+      "workbenches_etc": "Workbenches, Tables, and Accessories",
       "tools": "Tools",
       "discount": "Discount",
       "textbooks": "Textbooks",
-      "gigo_tech": "Gigo tech",
+      "gigo_tech": "Gigo Technology",
       "brick_r_knowledge": "Brick”R”knowledge",
-      "gigo_learning_lab": "Gigo learning Lab",
-      "not_gigo_techsets": "Non-Gigo tech sets",
-      "loose_parts": "Loose technical parts"
+      "gigo_learning_lab": "Gigo Learning Lab",
+      "not_gigo_techsets": "Non-Gigo Technology Sets",
+      "loose_parts": "Loose Parts Engineering"
     },
-    "signin": "Sign in",
-    "signup": "Sign up"
+    "signin": "Sign In",
+    "signup": "Sign Up"
   },
   "Homepage": {
     "header": {
-      "title": "The specialist for challenging technical materials for school and individuals",
-      "subtitle": "PMOT specializes in science and technology for primary and secondary education. A specially selected assortment has been put together for education, fitting within inquiry-based and design-based learning. Based on 30 years of experience in this field.",
+      "title": "The specialist for challenging technical materials for schools and individuals",
+      "subtitle": "PMOT specializes in science and technology for primary and secondary education. For this purpose, a range specially selected for educational purposes has been compiled, which fits within investigative and design-based learning. Based on 30 years of experience in this field of education.",
       "cta": "Read more >",
       "cta_shop": "Shop now >"
     },
     "information": {
       "webshopTitle": "Webshop",
-      "webshopSubtitle": "Check out our webshop for a wide range of robots.",
+      "webshopSubtitle": "Visit our webshop for an extensive range of robots.",
       "mediaTitle": "Media",
-      "mediaSubtitle": "Check out our media for a wide range of media offerings.",
+      "mediaSubtitle": "Visit our media for a comprehensive media offering.",
       "publicationsTitle": "Publications",
-      "publicationsSubtitle": "Check out our publications for a wide range of publication offerings.",
+      "publicationsSubtitle": "Visit our publications for an extensive range of publications.",
       "cta": "View"
     }
   },
+  "Shoppingcart": {
+    "summary": "Shopping Cart Overview",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "total": "Total",
+    "confirm_order": "Confirm Order"
+  },
   "Footer": {
-    "newsletterTitle": "Sign up for newsletter",
-    "newsletterSubTitle": "Stay informed about the newest things!",
+    "newsletterTitle": "Subscribe to Newsletter",
+    "newsletterSubTitle": "Stay informed about the latest developments!",
     "form": {
       "email": "Email",
       "subscribe": "Subscribe"
     },
     "data": "Data",
     "information": "Information",
-    "company-information": "Company information"
+    "company-information": "Company Information"
   }
 }

@@ -1,7 +1,7 @@
 import { ImagePlus, NotepadText, Store } from "lucide-react";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import { useTranslations } from "next-intl";
-import Headline from "./Headline";
+import Headline from "../Headline";
 
 export function Information() {
   const t = useTranslations("Homepage.information");
