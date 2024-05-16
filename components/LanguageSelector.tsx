@@ -47,13 +47,13 @@ function LanguageSelector() {
   const getLanguageFlag = (language: string) => {
     switch (language) {
       case "nl":
-        return "/netherlands.png";
+        return "/NL.png";
       case "en":
-        return "/us.png";
+        return "/US.png";
       case "de":
-        return "/germany.png";
+        return "/DE.png";
       default:
-        return "/netherlands.png";
+        return "/NL.png";
     }
   };
 
@@ -81,7 +81,7 @@ function LanguageSelector() {
           className="cursor-pointer"
         >
           <Image
-            src="/netherlands.png"
+            src="/NL.png"
             className="mr-2"
             alt="Logo"
             height={10}
