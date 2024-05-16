@@ -1,27 +1,43 @@
 import ProductCard from "@/components/webshop/ProductCard";
 import React from "react";
-
 import {
   Breadcrumb,
-  // BreadcrumbEllipsis,
   BreadcrumbItem,
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-// import { Input } from "@/components/ui/input";
 import Link from "@/lib/Link";
-// import {
-//   Accordion,
-//   AccordionContent,
-//   AccordionItem,
-//   AccordionTrigger,
-// } from "@/components/ui/accordion";
 import { WebshopFilter } from "@/components/webshop/WebshopFilter";
 import Headline from "@/components/Headline";
+import StrapiHelper from "@/app/helpers/strapiHelper";
 
-function ProductPage() {
+import { getLocale } from "next-intl/server";
+
+async function getProducts(param: string) {
+  const locale = await getLocale();
+  const strapiHelper = new StrapiHelper();
+  try {
+    console.log(locale);
+    const res = await strapiHelper.getStrapiData({
+      query: `/categories?locale=${locale}?filters[slug][$eq]=${param.categories}`,
+    });
+
+    const data = res.data;
+
+    if (data) {
+      return true;
+    } else {
+      return false;
+    }
+  } catch (error) {
+    console.error("Error fetching Strapi data:", error);
+  }
+}
+
+function ProductPage({params}: {params: {categories: string}}) {
+
   return (
     <main className="flex justify-between items-center mx-auto px-4 sm:px-2 py-4 max-w-7xl">
       <div>
@@ -41,9 +57,7 @@ function ProductPage() {
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
-          {/* Hier moet de titel van de producten met de categorie */}
-          <Headline Text="Products" />
-          {/* Hier moet de titel van de producten met de categorie */}
+          <Headline Text={params.categories} />
         </div>
         <div className="flex flex-col sm:flex-row gap-12 mt-12">
           <div id="filter-system" className="mt-">
