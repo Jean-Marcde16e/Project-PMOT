@@ -35,6 +35,7 @@ interface IProduct {
         Title: string;
         Description: string;
         Price: number;
+        Articlenumber: string;
     };
 }
 
@@ -142,6 +143,8 @@ function ProductsPage({ params }: { params: { categories: string } }) {
                                             ImageData={product.attributes.Images.data[0].attributes.url}
                                             Title={product.attributes.Title}
                                             Price={product.attributes.Price.toString()}
+                                            Category={params.categories}
+                                            ArticleNumber={product.attributes.Articlenumber}
                                         />
                                  );
                             })
