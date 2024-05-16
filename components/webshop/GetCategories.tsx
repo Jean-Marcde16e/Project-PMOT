@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from "react";
 import StrapiHelper from "@/app/helpers/strapiHelper";
 import { CategoryCard } from "./CategoryCard";
-import Link from "@/lib/Link";
 
 interface Category {
   attributes: {
@@ -15,7 +14,6 @@ interface Category {
       };
     };
     slug: string;
-    // CategorySlug: string;
     Name: string;
   };
 }
@@ -50,7 +48,7 @@ export function GetCategories() {
         return (
           <CategoryCard
             key={index}
-            Image={category.attributes.Image.data.attributes.url}
+            ImageUrl={category.attributes.Image.data.attributes.url}
             CategorySlug={category.attributes.slug}
             Title={category.attributes.Name}
           />
