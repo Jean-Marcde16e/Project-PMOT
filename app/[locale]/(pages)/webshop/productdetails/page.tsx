@@ -98,7 +98,7 @@ export default function ProductDetails() {
                 krachtig.
               </p>
             </div>
-            <div className="flex justify-center sm:justify-normal gap-3">
+            <div className="flex justify-center sm:justify-normal gap-3 mt-2">
               <div className="">
                 <Button
                   variant="outline"
