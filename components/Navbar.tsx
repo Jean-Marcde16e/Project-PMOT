@@ -33,7 +33,7 @@ export function Navbar() {
       <div className="flex justify-between items-center mx-auto px-4 sm:px-2 py-4 max-w-7xl">
         <nav className="md:flex md:flex-row flex-col md:items-center gap-6 md:gap-5 lg:gap-6 hidden font-medium text-lg md:text-sm">
           <Link
-            href="#"
+            href="/"
             className="flex items-center gap-2 font-semibold text-lg md:text-base"
           >
             <Image src="/logo.png" alt="Logo" height={100} width={200} />
@@ -137,9 +137,8 @@ export function Navbar() {
       <div className="bg-secondary hidden sm:block">
         <div className="flex justify-between items-center mx-auto px-4 sm:px-2 py-3 max-w-7xl">
           <div className="flex gap-1 text-white">
-            {/* <Menu /> */}
             <Categories />
-            {/* <p className="font-roboto">{t("categories")}</p> */}
+            <p className="font-roboto">{t("categories")}</p>
           </div>
           <div className="flex gap-3 text-white font-roboto">
             <Link
