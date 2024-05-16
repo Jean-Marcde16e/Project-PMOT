@@ -9,6 +9,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 
 import { ClerkProvider } from "@clerk/nextjs";
+import { Toaster } from "sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,6 +35,8 @@ export default async function RootLayout({
             <Navbar />
             {children}
             <Footer />
+
+            <Toaster />
           </ClerkProvider>
         </NextIntlClientProvider>
       </body>
