@@ -72,9 +72,10 @@ export function Categories({ translations }: { translations: string }) {
           <Image src="/logo.png" alt="Logo" height={75} width={150} />
         </SheetHeader>
         <Separator className="my-4" />
-        <ScrollArea className="h-full w-full rounded-md">
-          {data.map((item, index) => (
-            <Link key={index} href={`/categories/${item.attributes.slug}`}>
+        <ScrollArea className="w-full h-full rounded-md pb-16">
+        {        
+          data.map((item, index) => (
+            <Link key={index} href={`/webshop/${item.attributes.slug}`}>
               <div className="grid gap-4 py-2">
                 <div className="flex justify-between hover:bg-gray-100 py-4 px-2 mr-5 rounded-md">
                   <p>{item.attributes.Name}</p>
