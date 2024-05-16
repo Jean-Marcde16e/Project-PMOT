@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from "react";
 import StrapiHelper from "@/app/helpers/strapiHelper";
 import { CategoryCard } from "./CategoryCard";
-import Link from "@/lib/Link";
 
 interface Category {
   attributes: {
@@ -15,7 +14,6 @@ interface Category {
       };
     };
     slug: string;
-    // CategorySlug: string;
     Name: string;
   };
 }
@@ -32,7 +30,6 @@ export function GetCategories() {
         });
         const data = res.data;
         if (data) {
-          console.log(data);
           setCategoriesList(data);
           setLoading(false);
         } else {
@@ -49,17 +46,12 @@ export function GetCategories() {
     <>
       {CategoriesList.map((category, index) => {
         return (
-          //   <Link
-          //     href={`/webshop/category/${category.attributes.Name}`}
-          //     key={index}
-          //   >
           <CategoryCard
             key={index}
             Image={category.attributes.Image.data.attributes.url}
             CategorySlug={category.attributes.slug}
             Title={category.attributes.Name}
           />
-          //   </Link>
         );
       })}
     </>

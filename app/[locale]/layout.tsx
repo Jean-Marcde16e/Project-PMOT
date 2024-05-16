@@ -35,7 +35,6 @@ export default async function RootLayout({
             <Navbar />
             {children}
             <Footer />
-
             <Toaster />
           </ClerkProvider>
         </NextIntlClientProvider>
