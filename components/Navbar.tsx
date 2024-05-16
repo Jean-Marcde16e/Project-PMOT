@@ -88,7 +88,7 @@ export function Navbar() {
               />
             </div>
           </form>
-          <Link href="#" className="hover:text-foreground">
+          <Link href="/webshop/shoppingcart" className="hover:text-foreground">
             <ShoppingCart className="w-6 h-6" />
           </Link>
           <SignedOut>
