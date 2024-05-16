@@ -14,6 +14,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { usePathname } from "next/navigation";
 import StrapiHelper from "@/app/helpers/strapiHelper";
 import Link from "@/lib/Link";
+import { useTranslations } from "next-intl";
 
 interface Data {
   attributes: {
@@ -23,6 +24,7 @@ interface Data {
 }
 
 export function Categories({ translations }: { translations: string }) {
+  const t = useTranslations("Navbar");
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState<Data[]>([]);
 
@@ -62,6 +64,7 @@ export function Categories({ translations }: { translations: string }) {
       <SheetTrigger asChild>
         <p className="font-roboto cursor-pointer flex gap-1">
           <Menu />
+          {t("categories")}
         </p>
       </SheetTrigger>
       <SheetContent side="left">
