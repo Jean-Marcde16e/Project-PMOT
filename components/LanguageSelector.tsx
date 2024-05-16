@@ -95,7 +95,7 @@ function LanguageSelector() {
           className="cursor-pointer"
         >
           <Image
-            src="/us.png"
+            src="/US.png"
             className="mr-2"
             alt="Logo"
             height={10}
@@ -109,7 +109,7 @@ function LanguageSelector() {
           className="cursor-pointer"
         >
           <Image
-            src="/germany.png"
+            src="/DE.png"
             className="mr-2"
             alt="Logo"
             height={10}

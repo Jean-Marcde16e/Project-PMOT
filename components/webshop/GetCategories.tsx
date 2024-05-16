@@ -48,7 +48,7 @@ export function GetCategories() {
         return (
           <CategoryCard
             key={index}
-            Image={category.attributes.Image.data.attributes.url}
+            ImageUrl={category.attributes.Image.data.attributes.url}
             CategorySlug={category.attributes.slug}
             Title={category.attributes.Name}
           />

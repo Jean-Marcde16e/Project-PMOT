@@ -130,7 +130,7 @@ export function WebshopFilter({ className, ...props }: SliderProps) {
             </AccordionContent>
             <AccordionContent className="flex items-center hover:underline gap-2">
               <Checkbox id="terms" />
-              Brick "R" Knowledge
+              Brick &quot;R&quot; Knowledge
             </AccordionContent>
             <AccordionContent className="flex items-center hover:underline gap-2">
               <Checkbox id="terms" />

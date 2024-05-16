@@ -1,9 +1,4 @@
-import {
-  CircleUser,
-  Menu,
-  Search,
-  ShoppingCart,
-} from "lucide-react";
+import { CircleUser, Menu, Search, ShoppingCart } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import LanguageSelector from "./LanguageSelector";
 import "@fontsource/roboto";
@@ -13,11 +8,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import Link from "@/lib/Link";
 import Image from "next/image";
 import { Button } from "./ui/button";
@@ -33,7 +24,7 @@ export function Navbar() {
       <div className="flex justify-between items-center mx-auto px-4 sm:px-2 py-4 max-w-7xl">
         <nav className="md:flex md:flex-row flex-col md:items-center gap-6 md:gap-5 lg:gap-6 hidden font-medium text-lg md:text-sm">
           <Link
-            href="#"
+            href="/"
             className="flex items-center gap-2 font-semibold text-lg md:text-base"
           >
             <Image src="/logo.png" alt="Logo" height={100} width={200} />
@@ -59,25 +50,25 @@ export function Navbar() {
                 <Image src="/logo.png" alt="Logo" height={100} width={200} />
               </Link>
               <Link
-                href="#"
+                href="/"
                 className="text-muted-foreground hover:text-foreground"
               >
                 {t("items.home")}
               </Link>
               <Link
-                href="/webshop/categorylist"
+                href="/webshop"
                 className="text-muted-foreground hover:text-foreground"
               >
                 {t("items.webshop")}
               </Link>
               <Link
-                href="/products"
+                href="/media"
                 className="text-muted-foreground hover:text-foreground"
               >
                 {t("items.media")}
               </Link>
               <Link
-                href="#"
+                href="/publications"
                 className="text-muted-foreground hover:text-foreground"
               >
                 {t("items.publications")}
@@ -137,29 +128,29 @@ export function Navbar() {
       <div className="bg-secondary hidden sm:block">
         <div className="flex justify-between items-center mx-auto px-4 sm:px-2 py-3 max-w-7xl">
           <div className="flex gap-1 text-white">
-            <Categories />
+            <Categories translations={t("categories")} />
           </div>
           <div className="flex gap-3 text-white font-roboto">
             <Link
-              href="#"
+              href="/"
               className="text-muted-foreground hover:text-foreground"
             >
               {t("items.home")}
             </Link>
             <Link
-              href="/webshop/categorylist"
+              href="/webshop"
               className="text-muted-foreground hover:text-foreground"
             >
               {t("items.webshop")}
             </Link>
             <Link
-              href="#"
+              href="/media"
               className="text-muted-foreground hover:text-foreground"
             >
               {t("items.media")}
             </Link>
             <Link
-              href="#"
+              href="/publications"
               className="text-muted-foreground hover:text-foreground"
             >
               {t("items.publications")}
