@@ -12,6 +12,7 @@ import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import { ChevronUp, ShoppingCart } from "lucide-react";
+import ToastButton from "@/components/ToastButton";
 
 export default function ProductDetails() {
   return (
@@ -107,14 +108,8 @@ export default function ProductDetails() {
                   <ChevronUp className="rotate-180 text-black" />
                 </Button>
               </div>
-              <div>
-                <Button
-                  variant="secondary"
-                  className="mt-5 p-3 flex gap-3 items-center"
-                >
-                  <ShoppingCart />
-                  In winkelwagen
-                </Button>
+              <div className="mt-5">
+                <ToastButton Text="In winkelwagen" />
               </div>
             </div>
           </div>
