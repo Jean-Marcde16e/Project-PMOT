@@ -15,7 +15,11 @@ import StrapiHelper from "@/app/helpers/strapiHelper";
 
 import { getLocale } from "next-intl/server";
 
-async function getProducts(param: string) {
+interface param {
+  categories: string;
+}
+
+async function getProducts(param: param) {
   const locale = await getLocale();
   const strapiHelper = new StrapiHelper();
   try {
