@@ -59,7 +59,7 @@ export function Hero() {
             </p>
           </div>
 
-          <div className="text-center sm:text-left">
+          <div className="text-center flex flex-end sm:text-left">
             <Link
               href="#"
               className="px-5 py-3 text-md font-semibold border rounded-md bg-secondary text-white"
