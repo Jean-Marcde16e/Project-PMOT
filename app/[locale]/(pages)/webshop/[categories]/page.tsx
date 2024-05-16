@@ -39,14 +39,11 @@ interface IProduct {
     };
 }
 
-function ProductsPage({ params }: { params: { categories: string } }) {
+function ProductsPage({ params }: { params: { locale: string, categories: string } }) {
     const [loading, setLoading] = useState(true);
     const [categoryData, setCategoryData] = useState<IcategoryData | null>(null);
     const [products, setProducts] = useState<IProduct[]>([]);
-
-    const pathname = usePathname();
-
-    const locale = pathname.split("/")[1] || "en"; // default to 'en' if locale is not found
+    const locale = params.locale;
 
     useEffect(() => {
         // Zoek de categorie op basis van de slug
@@ -54,7 +51,6 @@ function ProductsPage({ params }: { params: { categories: string } }) {
             const strapiHelper = new StrapiHelper();
 
             try {
-                console.log(locale);
                 const res = await strapiHelper.getStrapiData({
                     query: `/categories?locale=${locale}&filters[slug][$eq]=${param.categories}`,
                 });
