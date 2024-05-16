@@ -42,26 +42,30 @@ export default function ProductDetails() {
             </BreadcrumbList>
           </Breadcrumb>
         </div>
-        <div className="flex flex-col sm:flex-row justify-center gap-40 mt-14">
+        <div className="flex flex-col sm:flex-row justify-center gap-10 sm:gap-40 mt-14">
           <div>
             <img
               src="https://pmot.nl/wp-content/uploads/2018/04/58BD0823-0A8C-4778-8F47-FF5986A98130-1034-000000BDD83D3F98_tmp-768x952.jpg"
               alt="Product"
-              className="w-[500px] rounded-lg"
+              className="w-full md:h-[625px] object-contain rounded-lg"
             />
           </div>
           <div>
             <div>
-              <h1 className="text-xl mb-3">RoboBloq Qoopers</h1>
+              <h1 className="text-xl text-center sm:text-left mb-3">
+                RoboBloq Qoopers
+              </h1>
               <Separator className="my-4" />
             </div>
             <div>
-              <p className="text-secondary font-bold text-xl">€185.00</p>
-              <p className="font-semibold my-5 text-gray-700">
+              <p className="text-secondary font-bold text-xl text-center sm:text-left">
+                €185.00
+              </p>
+              <p className="font-semibold my-5 text-gray-700 text-center sm:text-left">
                 Beschikbaarheid:{" "}
                 <span className="text-green-600">Op voorraad</span>
               </p>
-              <p className="w-[500px] text-sm">
+              <p className="w-full sm:w-[500px] text-sm text-center sm:text-left">
                 Robobloq Qoopers is een betaalbare, eenvoudig te gebruiken robot
                 voor kinderen om ervaring op te doen met grafisch programmeren
                 (met Scratch), elektronica en robotica. Het is een alles in een
@@ -72,9 +76,11 @@ export default function ProductDetails() {
             {/* <Separator className="my-4" /> */}
             <div>
               <Separator className="my-4" />
-              <h1 className="font-semibold text-md">Description</h1>
+              <h1 className="font-semibold text-md text-center sm:text-left">
+                Beschrijving
+              </h1>
               <Separator className="my-4" />
-              <p className="w-[500px] text-sm">
+              <p className="w-full sm:w-[500px] text-sm text-center sm:text-left">
                 De Qoopers heeft een aluminium behuizing wat de robot een
                 uitdagend uiterlijk geeft en daarmee bestendig is tegen
                 beschadigingen. Er kunnen 6 verschillende modellen gebouwd
@@ -91,12 +97,8 @@ export default function ProductDetails() {
                 krachtig.
               </p>
             </div>
-            <div className="flex gap-3">
+            <div className="flex justify-center sm:justify-normal gap-3">
               <div className="">
-                {/* <span>1</span>
-                <span>
-                  <ChevronUp className="rotate-180 text-black" />
-                </span> */}
                 <Button
                   variant="outline"
                   className="mt-5 p-3 py-2 flex gap-1 items-center"
