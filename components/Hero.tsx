@@ -78,7 +78,7 @@ export function Hero() {
           <img
             src="https://cdn.vox-cdn.com/thumbor/EuDyAxLrF4EZFo5KIJLTDQ35HUk=/0x0:2364x1330/1200x800/filters:focal(993x476:1371x854)/cdn.vox-cdn.com/uploads/chorus_image/image/52627899/lego_boost_design_products_technology_robots_dezeen_hero.0.jpg"
             alt="Hero Image"
-            className="object-contain rounded-md w-[300px] sm:w-[1200px] md:w-[1800px]"
+            className="object-contain rounded-md w-full sm:w-[1200px] md:w-[1800px]"
           />
         </div>
       </div>

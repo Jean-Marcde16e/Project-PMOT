@@ -65,70 +65,59 @@ export function Reviews() {
     }, []);
 
     return (
-        <Carousel
-            opts={{
-                align: "start",
-            }}
-            className="w-screen mx-auto px-4 sm:px-2 py-4 max-w-7xl mt-20"
-        >
-            <Headline Text="Reviews" />
-            <CarouselContent>
-                {
-                    (loading && (
-                        <div className="flex flex-wrap gap-8 justify-center">
-                            <Skeleton width={400} height={400} />
-                            <Skeleton width={400} height={400} />
-                            <Skeleton width={400} height={400} />
+      <Carousel
+        opts={{
+          align: "start",
+        }}
+        className="w-screen mx-auto px-4 sm:px-2 py-4 max-w-7xl mt-20"
+      >
+        <Headline Text="Reviews" />
+        <CarouselContent>
+          {(loading && (
+            <div className="flex flex-wrap gap-8 justify-center">
+              <Skeleton width={400} height={400} />
+              <Skeleton width={400} height={400} />
+              <Skeleton width={400} height={400} />
+            </div>
+          )) ||
+            ReviewsList.map((review, index) => (
+              <CarouselItem
+                key={index}
+                className="pl-4 sm:pl-0 md:basis-1/2 lg:basis-1/3"
+              >
+                <div className="p-1">
+                  <Card>
+                    <CardContent className="flex flex-col aspect-square items-center p-6">
+                      <div className="my-4 text-center">
+                        <div className="flex gap-2 items-center">
+                          <Image
+                            src={"/" + review.attributes.Country + ".png"}
+                            className="rounded-full"
+                            alt="Logo"
+                            height={15}
+                            width={25}
+                          />
+                          <p className="text-md">{review.attributes.Name}</p>
                         </div>
-                    )) ||
-                        ReviewsList.map((review, index) => (
-                            <CarouselItem
-                                key={index}
-                                className="pl-4 md:basis-1/2 lg:basis-1/3"
-                            >
-                                <div className="p-1">
-                                    <Card>
-                                        <CardContent className="flex flex-col aspect-square items-center p-6">
-                                            <div className="my-4 text-center">
-                                                <div className="flex gap-2 items-center">
-                                                    <Image
-                                                        src={
-                                                            "/" +
-                                                            review.attributes
-                                                                .Country +
-                                                            ".png"
-                                                        }
-                                                        className="rounded-full"
-                                                        alt="Logo"
-                                                        height={15}
-                                                        width={25}
-                                                    />
-                                                    <p className="text-md">
-                                                        {review.attributes.Name}
-                                                    </p>
-                                                </div>
-                                                <p className="text-gray-500 text-xs mt-1">
-                                                    {review.attributes.Date}
-                                                </p>
-                                                <div className="flex py-4">
-                                                    {renderStars(
-                                                        review.attributes.stars
-                                                    )}
-                                                </div>
-                                            </div>
-                                            <p className="text-center text-wrap line-clamp-[8]">
-                                                &quot;{review.attributes.review}
-                                                &quot;
-                                            </p>
-                                        </CardContent>
-                                    </Card>
-                                </div>
-                            </CarouselItem>
-                        ))
-                }
-            </CarouselContent>
-            <CarouselPrevious className="hidden sm:flex" />
-            <CarouselNext className="hidden sm:flex" />
-        </Carousel>
+                        <p className="text-gray-500 text-xs mt-1">
+                          {review.attributes.Date}
+                        </p>
+                        <div className="flex py-4">
+                          {renderStars(review.attributes.stars)}
+                        </div>
+                      </div>
+                      <p className="text-center text-wrap line-clamp-[8]">
+                        &quot;{review.attributes.review}
+                        &quot;
+                      </p>
+                    </CardContent>
+                  </Card>
+                </div>
+              </CarouselItem>
+            ))}
+        </CarouselContent>
+        <CarouselPrevious className="hidden sm:flex" />
+        <CarouselNext className="hidden sm:flex" />
+      </Carousel>
     );
 }
