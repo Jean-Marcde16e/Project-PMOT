@@ -23,6 +23,7 @@ interface ProductProps {
 function ProductCard({ ImageData, Title, Price, Category, ArticleNumber }: ProductProps) {
     return (
         <Card className="w-80 rounded-lg">
+            <Link href={`/webshop/${Category}/${ArticleNumber}`} className="">
                 <Image
                     src={ImageData}
                     alt="Product"
@@ -36,6 +37,7 @@ function ProductCard({ ImageData, Title, Price, Category, ArticleNumber }: Produ
                 <CardContent>
                     <p className="mt-3 text-lg">{priceFormatter(Price)}</p>
                 </CardContent>
+            </Link>
                 <CardFooter>
                     <div className="flex justify-between items-center gap-x-2">
                         <ToastButton Text="" />
