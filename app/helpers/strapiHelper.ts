@@ -1,6 +1,6 @@
 class StrapiHelper {
   // strapi url
-  private url = 'https://pmot.psww.dev/api'
+  private url = 'https://pmot-cms.psww.dev/api'
   // strapi api key
   private apiKey = 'b4b4e12552beffb82a5735e32b735295778155fc3c4e1aecfdb1d9181b77a100589db85cd755ba1a7027263c9fab9552344fef0e4e61d9fb319067b078490dff56f9ead265ae064f2851663aa6ae4ed3f5fb45ab3ab4d05c19867fea0189cf1a737e0cecc61f644ddb467a6bd6c4181cfb4bfaaaf3a28eaea22d283cd6ef094f'
   
