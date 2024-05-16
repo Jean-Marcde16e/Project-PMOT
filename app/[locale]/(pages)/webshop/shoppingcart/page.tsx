@@ -3,7 +3,7 @@ import { Trash } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 
-function shoppingCart() {
+function ShoppingCart() {
   const t = useTranslations("Shoppingcart");
   return (
     <section className=" mx-auto px-4 sm:px-2 max-w-7xl mt-14">
@@ -92,4 +92,4 @@ function shoppingCart() {
   );
 }
 
-export default shoppingCart;
+export default ShoppingCart;
