@@ -1,9 +1,4 @@
-import {
-  CircleUser,
-  Menu,
-  Search,
-  ShoppingCart,
-} from "lucide-react";
+import { CircleUser, Menu, Search, ShoppingCart } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import LanguageSelector from "./LanguageSelector";
 import "@fontsource/roboto";
@@ -13,11 +8,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import Link from "@/lib/Link";
 import Image from "next/image";
 import { Button } from "./ui/button";

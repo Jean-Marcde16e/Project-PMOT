@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import {
   Sheet,
@@ -11,9 +11,9 @@ import {
 import { ChevronRight, Menu } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { usePathname } from 'next/navigation';
-import StrapiHelper from '@/app/helpers/strapiHelper';
-import Link from '@/lib/Link';
+import { usePathname } from "next/navigation";
+import StrapiHelper from "@/app/helpers/strapiHelper";
+import Link from "@/lib/Link";
 
 interface Data {
   attributes: {
@@ -22,7 +22,7 @@ interface Data {
   };
 }
 
-export function Categories({translations}: {translations: string}) {
+export function Categories({ translations }: { translations: string }) {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState<Data[]>([]);
 
@@ -31,30 +31,30 @@ export function Categories({translations}: {translations: string}) {
   const locale = pathname.split("/")[1] || "en";
 
   useEffect(() => {
-      const getStrapiData = async () => {
-          const strapiHelper = new StrapiHelper();
+    const getStrapiData = async () => {
+      const strapiHelper = new StrapiHelper();
 
-          try {
-              const res = await strapiHelper.getStrapiData({
-                  query: `/categories?locale=${locale}`,
-              });
+      try {
+        const res = await strapiHelper.getStrapiData({
+          query: `/categories?locale=${locale}`,
+        });
 
-              const data = res.data;
+        const data = res.data;
 
-              if (data) {
-                  setData(data);
-                  setLoading(false);
-              } else {
-                  console.error("No data found");
-              }
-          } catch (error) {
-              console.error("Error fetching Strapi data:", error);
-          }
-      };
-
-      if (locale) {
-          getStrapiData();
+        if (data) {
+          setData(data);
+          setLoading(false);
+        } else {
+          console.error("No data found");
+        }
+      } catch (error) {
+        console.error("Error fetching Strapi data:", error);
       }
+    };
+
+    if (locale) {
+      getStrapiData();
+    }
   }, [locale]);
 
   return (
@@ -62,7 +62,6 @@ export function Categories({translations}: {translations: string}) {
       <SheetTrigger asChild>
         <p className="font-roboto cursor-pointer flex gap-1">
           <Menu />
-          <span className="font-roboto">{translations}</span>
         </p>
       </SheetTrigger>
       <SheetContent side="left">
@@ -81,8 +80,7 @@ export function Categories({translations}: {translations: string}) {
                 </div>
               </div>
             </Link>
-          ))
-        }
+          ))}
         </ScrollArea>
       </SheetContent>
     </Sheet>
