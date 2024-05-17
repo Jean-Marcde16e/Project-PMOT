@@ -47,7 +47,7 @@ export function Hero() {
   }, [locale]);
 
   return (
-    <section className="dark:bg-gray-800 w-full md:max-w-5xl lg:max-w-7xl dark:text-gray-100 mt-5 sm:mt-12">
+    <section className="dark:bg-gray-800 w-full md:px-4 mx-auto md:max-w-5xl lg:max-w-5xl xl:max-w-7xl dark:text-gray-100 mt-5 sm:mt-12">
       <div className="flex justify-between flex-col-reverse md:flex-row">
         <div className="sm:pr-5">
           <div className="sm:pr-12">

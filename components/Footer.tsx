@@ -11,7 +11,7 @@ export function Footer() {
     return (
         <div className="bg-primary mt-12">
             <div className="mx-auto px-4 sm:px-2 py-4 max-w-7xl">
-                <div className="flex flex-col gap-8 md:gap-0 md:flex-row justify-between my-24">
+                <div className="flex flex-col gap-8 md:gap-0  items-center  md:flex-row justify-between my-24">
                     <div className="mx-auto md:mx-0">
                         <Image
                             src="/logo-big.png"
@@ -22,10 +22,10 @@ export function Footer() {
                     </div>
                     <div className="flex flex-col items-center mt-12 max-w-xs sm:mt-0">
                         <div className="p-1 w-full max-w-xs">
-                            <h1 className="font-bold text-lg md:text-xl text-left">
+                            <h1 className="font-bold text-lg md:text-xl text-center">
                                 {t("newsletterTitle")}
                             </h1>
-                            <p className="mt-1 text-left">
+                            <p className="mt-1 text-center">
                                 {t("newsletterSubTitle")}
                             </p>
                         </div>
