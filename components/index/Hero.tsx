@@ -47,11 +47,11 @@ export function Hero() {
   }, [locale]);
 
   return (
-    <section className="dark:bg-gray-800 dark:text-gray-100 mt-5 sm:mt-12">
-      <div className="flex justify-between flex-col-reverse sm:flex-row">
+    <section className="dark:bg-gray-800 w-full md:max-w-5xl lg:max-w-7xl dark:text-gray-100 mt-5 sm:mt-12">
+      <div className="flex justify-between flex-col-reverse md:flex-row">
         <div className="sm:pr-5">
           <div className="sm:pr-12">
-            <h1 className="text-xl md:text-4xl font-bold mt-4 text-tertiary sm:mt-0">
+            <h1 className="text-xl md:text-4xl font-bold mt-4 text-tertiary md:mt-0">
               {loading ? <Skeleton width={700} height={50} /> : title}
             </h1>
             <p className="mt-5 mb-8 text-lg sm:mb-12 text-left">

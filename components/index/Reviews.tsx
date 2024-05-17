@@ -69,7 +69,7 @@ export function Reviews() {
       opts={{
         align: "start",
       }}
-      className="w-screen mx-auto px-4 sm:px-2 py-4 max-w-7xl mt-20"
+      className="mx-auto px-4 sm:px-2 py-4 max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-7xl mt-20"
     >
       <Headline Text="Reviews" />
       <CarouselContent>
@@ -116,8 +116,8 @@ export function Reviews() {
             </CarouselItem>
           ))}
       </CarouselContent>
-      <CarouselPrevious className="hidden sm:flex" />
-      <CarouselNext className="hidden sm:flex" />
+      <CarouselPrevious className="hidden sm:h-12 sm:w-12 sm:flex" />
+      <CarouselNext className="hidden sm:h-12 sm:w-12 sm:flex" />
     </Carousel>
   );
 }

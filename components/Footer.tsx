@@ -11,8 +11,8 @@ export function Footer() {
     return (
         <div className="bg-primary mt-12">
             <div className="mx-auto px-4 sm:px-2 py-4 max-w-7xl">
-                <div className="flex flex-col sm:flex-row justify-between my-24">
-                    <div className="mx-auto sm:mx-0">
+                <div className="flex flex-col gap-8 md:gap-0 md:flex-row justify-between my-24">
+                    <div className="mx-auto md:mx-0">
                         <Image
                             src="/logo-big.png"
                             alt="Logo"
@@ -20,33 +20,35 @@ export function Footer() {
                             width={200}
                         />
                     </div>
-                    <div className="flex flex-col mt-12 sm:mt-0">
-                        <div className="p-1">
-                            <h1 className="font-bold text-xl text-center sm:text-left">
+                    <div className="flex flex-col items-center mt-12 max-w-xs sm:mt-0">
+                        <div className="p-1 w-full max-w-xs">
+                            <h1 className="font-bold text-lg md:text-xl text-left">
                                 {t("newsletterTitle")}
                             </h1>
-                            <p className="mt-1 text-center sm:text-left">
+                            <p className="mt-1 text-left">
                                 {t("newsletterSubTitle")}
                             </p>
                         </div>
-                        <div className="flex w-full max-w-sm items-center space-x-2 mt-2 sm:mt-4">
+                        <div className="flex w-full max-w-xs items-center space-x-2 mt-2 sm:mt-4">
                             <Input type="email" placeholder={t("form.email")} />
                             <Button type="submit" variant={"secondary"}>
                                 {t("form.subscribe")}
                             </Button>
                         </div>
                     </div>
-                    <div className="flex flex-col sm:flex-row text-center sm:text-left gap-9 mt-6 sm:mt-0">
+                    <div className="flex flex-col sm:justify-center sm:flex-row text-left gap-9 mt-6 sm:mt-0">
                         <div>
-                            <h1 className="font-bold text-lg">{t("data")}</h1>
-                            <p>PMOT</p>
-                            <p>Torenstraat 13</p>
-                            <p>9679 BN Scheemda</p>
-                            <p>Nederland</p>
-                            <p>+31 (0)597 591596</p>
+                            <h1 className="font-bold text-xl mb-1">{t("data")}</h1>
+                            <ul>
+                                <li>PMOT</li>
+                                <li>Torenstraat 13</li>
+                                <li>9679 BN Scheemda</li>
+                                <li>Nederland</li>
+                                <li>+31 (0)597 591596</li>
+                            </ul>
                         </div>
                         <div className="flex flex-col">
-                            <h1 className="font-bold text-lg">
+                            <h1 className="font-bold text-xl mb-1">
                                 {t("information")}
                             </h1>
                             <Link
@@ -92,8 +94,8 @@ export function Footer() {
                             © {new Date().getFullYear()} PMOT - All rights reserved
                         </p>
                         <small className="text-muted-foreground text-slate-200 text-xs">
-                          Made with ❤️ by{" "} Noorderpoort students
-                          </small>
+                            Made with ❤️ by{" "} Noorderpoort students
+                        </small>
                     </div>{" "}
                 </div>
             </div>

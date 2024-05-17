@@ -130,7 +130,7 @@ export function Navbar() {
           <div className="flex gap-1 text-white">
             <Categories translations={t("categories")} />
           </div>
-          <div className="flex gap-3 text-white font-roboto">
+          <div className="flex gap-5 text-white font-roboto">
             <Link
               href="/"
               className="text-muted-foreground hover:text-foreground"
