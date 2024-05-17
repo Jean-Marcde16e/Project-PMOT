@@ -69,7 +69,7 @@ export function Reviews() {
       opts={{
         align: "start",
       }}
-      className="mx-auto px-4 sm:px-2 py-4 max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-7xl mt-20"
+      className="mx-auto px-4 sm:px-2 py-4 max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-5xl mt-20"
     >
       <Headline Text="Reviews" />
       <CarouselContent>
