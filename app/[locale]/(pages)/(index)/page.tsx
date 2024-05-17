@@ -1,4 +1,3 @@
-import Headline from "@/components/Headline";
 import ContactForm from "@/components/index/ContactForm";
 import { Hero } from "@/components/index/Hero";
 import { Information } from "@/components/index/Information";
