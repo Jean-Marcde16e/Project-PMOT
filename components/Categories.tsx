@@ -62,7 +62,7 @@ export function Categories({ translations }: { translations: string }) {
   return (
     <Sheet key="left">
       <SheetTrigger asChild>
-        <p className="font-roboto cursor-pointer flex gap-1">
+        <p className="flex items-center font-roboto cursor-pointer gap-1">
           <Menu />
           {t("categories")}
         </p>
@@ -73,8 +73,7 @@ export function Categories({ translations }: { translations: string }) {
         </SheetHeader>
         <Separator className="my-4" />
         <ScrollArea className="w-full h-full rounded-md pb-16">
-        {        
-          data.map((item, index) => (
+          {data.map((item, index) => (
             <Link key={index} href={`/webshop/${item.attributes.slug}`}>
               <div className="grid gap-4 py-2">
                 <div className="flex justify-between hover:bg-gray-100 py-4 px-2 mr-5 rounded-md">

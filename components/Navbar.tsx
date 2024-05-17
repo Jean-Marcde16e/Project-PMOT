@@ -73,6 +73,7 @@ export function Navbar() {
               >
                 {t("items.publications")}
               </Link>
+              <Categories translations={t("categories")} />
               <LanguageSelector />
             </nav>
           </SheetContent>
