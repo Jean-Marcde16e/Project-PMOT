@@ -10,7 +10,7 @@
       "home": "Startseite",
       "webshop": "Webshop",
       "media": "Medien",
-      "publications": "Veröffentlichungen"
+      "publications": "Publikationen"
     },
     "categories": "Kategorien",
     "categorieSheetItems": {
@@ -19,18 +19,18 @@
       "electricity": "Elektrizität & Magnetismus",
       "physics": "Physik",
       "compact_building_blocks": "Kompakte Modellbausteine",
-      "wood_sets": "Holztechniksets",
-      "calculate": "Berechnen",
+      "wood_sets": "Holztechnik-Sets",
+      "calculate": "Rechnen",
       "giftedness": "Hochbegabung",
-      "storage_systems": "Aufbewahrungssysteme",
+      "storage_systems": "Lagersysteme",
       "workbenches_etc": "Werkbänke, Tische und Zubehör",
       "tools": "Werkzeuge",
       "discount": "Angebot",
       "textbooks": "Lehrbücher",
-      "gigo_tech": "Gigo-Technik",
+      "gigo_tech": "Gigo Technik",
       "brick_r_knowledge": "Brick”R”knowledge",
       "gigo_learning_lab": "Gigo Learning Lab",
-      "not_gigo_techsets": "Nicht Gigo-Techniksets",
+      "not_gigo_techsets": "Nicht Gigo Techniksets",
       "loose_parts": "Einzelteile Technik"
     },
     "signin": "Anmelden",
@@ -38,37 +38,44 @@
   },
   "Homepage": {
     "header": {
-      "title": "Der Spezialist für anspruchsvolle Technikmaterialien für Schule und Privatpersonen",
-      "subtitle": "PMOT ist spezialisiert auf Wissenschaft und Technik für die Grund- und weiterführende Schule. Dafür wurde eine speziell für Bildungszwecke ausgewählte Sortiment zusammengestellt, das sich in forschendem und gestaltendem Lernen widerspiegelt. Basierend auf 30 Jahren Erfahrung in diesem Bildungsbereich.",
-      "cta": "Mehr erfahren >",
-      "cta_shop": "Jetzt einkaufen >"
+      "title": "Der Spezialist für herausfordernde Technikmaterialien für Schule und Privat",
+      "subtitle": "PMOT ist spezialisiert auf Wissenschaft und Technik für die Grundschule und die Sekundarstufe. Hierfür wurde ein speziell für den Bildungsbereich ausgewähltes Sortiment zusammengestellt, das zum forschenden und entwerfenden Lernen passt. Basierend auf 30 Jahren Erfahrung in diesem Lernbereich.",
+      "cta": "Mehr lesen >",
+      "cta_shop": "Jetzt shoppen >"
     },
     "information": {
       "webshopTitle": "Webshop",
-      "webshopSubtitle": "Besuchen Sie unseren Webshop für eine umfangreiche Auswahl an Robotern.",
+      "webshopSubtitle": "Besuchen Sie unseren Webshop für ein umfangreiches Sortiment an Robotern.",
       "mediaTitle": "Medien",
       "mediaSubtitle": "Besuchen Sie unsere Medien für ein umfangreiches Medienangebot.",
-      "publicationsTitle": "Veröffentlichungen",
-      "publicationsSubtitle": "Besuchen Sie unsere Veröffentlichungen für ein umfangreiches Angebot an Publikationen.",
+      "publicationsTitle": "Publikationen",
+      "publicationsSubtitle": "Besuchen Sie unsere Publikationen für ein umfangreiches Publikationsangebot.",
       "cta": "Ansehen"
+    },
+    "contact": {
+      "get_contact": "Kontaktieren Sie uns!",
+      "name": "Name",
+      "email": "E-Mail",
+      "message": "Ihre Nachricht",
+      "cta": "Nachricht senden"
     }
   },
   "Shoppingcart": {
-    "summary": "Warenkorbübersicht",
+    "summary": "Warenkorb Übersicht",
     "subtotal": "Zwischensumme",
     "shipping": "Versandkosten",
     "total": "Gesamt",
     "confirm_order": "Bestellung bestätigen"
   },
   "Footer": {
-    "newsletterTitle": "Anmeldung für Newsletter",
-    "newsletterSubTitle": "Bleiben Sie über die neuesten Entwicklungen informiert!",
+    "newsletterTitle": "Für Newsletter anmelden",
+    "newsletterSubTitle": "Bleiben Sie auf dem Laufenden über die neuesten Dinge!",
     "form": {
       "email": "E-Mail",
       "subscribe": "Abonnieren"
     },
     "data": "Daten",
     "information": "Informationen",
-    "company-information": "Unternehmensinformationen"
+    "company-information": "Firmeninformationen"
   }
 }

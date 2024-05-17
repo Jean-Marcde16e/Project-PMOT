@@ -51,6 +51,13 @@
       "publicationsTitle": "Publicaties",
       "publicationsSubtitle": "Bekijk onze publicaties voor een uitgebreid publicatie aanbod.",
       "cta": "Bekijk"
+    },
+    "contact": {
+      "get_contact": "Neem contact op!",
+      "name": "Naam",
+      "email": "Email",
+      "message": "Uw bericht",
+      "cta": "Verstuur bericht"
     }
   },
   "Shoppingcart": {
