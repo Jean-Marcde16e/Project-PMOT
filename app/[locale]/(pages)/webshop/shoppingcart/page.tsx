@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 function ShoppingCart() {
   const t = useTranslations("Shoppingcart");
   return (
-    <section className=" mx-auto px-4 sm:px-2 max-w-7xl mt-14">
+    <section className=" mx-auto px-4 sm:px-2 max-w-5xl mt-14">
       <h1 className="mb-2 text-xl text-black font-medium font-monserrat">
         {t("summary")}
       </h1>
