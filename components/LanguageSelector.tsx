@@ -49,7 +49,7 @@ function LanguageSelector() {
       case "nl":
         return "/NL.png";
       case "en":
-        return "/US.png";
+        return "/EN.png";
       case "de":
         return "/DE.png";
       default:
@@ -95,7 +95,7 @@ function LanguageSelector() {
           className="cursor-pointer"
         >
           <Image
-            src="/US.png"
+            src="/EN.png"
             className="mr-2"
             alt="Logo"
             height={10}
